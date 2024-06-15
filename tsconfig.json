@@ -1,21 +1,33 @@
 {
   "compilerOptions": {
+    "lib": [
+      "es5",
+      "es6"
+    ],
+    "esModuleInterop": true,
+    "target": "es6",
     "module": "commonjs",
-    "declaration": true,
+    "rootDir": "src",
+    "moduleResolution": "node",
+    "importHelpers": true,
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "resolveJsonModule": true,
+    "outDir": "./dist",
     "removeComments": true,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "allowSyntheticDefaultImports": true,
-    "target": "es2017",
     "sourceMap": true,
-    "outDir": "./dist",
-    "baseUrl": "./",
-    "incremental": true,
-    "skipLibCheck": true,
-    "strictNullChecks": false,
-    "noImplicitAny": false,
-    "strictBindCallApply": false,
-    "forceConsistentCasingInFileNames": false,
-    "noFallthroughCasesInSwitch": false
-  }
+    "skipLibCheck": true
+  },
+  "include": [
+    "src/**/*",
+    "../../../Library/Caches/JetBrains/WebStorm2024.1/javascript/typings/node/20.11.30/node_modules/@types/node/globals.d.ts"
+  ],
+  "exclude": [
+    "node_modules",
+    "build",
+    "tests"
+  ]
 }
